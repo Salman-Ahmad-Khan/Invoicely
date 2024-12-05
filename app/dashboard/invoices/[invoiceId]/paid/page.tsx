@@ -39,13 +39,13 @@ import { SubmitButton } from "@/components/shared/SubmitButtons";
       <div className="flex flex-1 justify-center items-center">
         <Card className="max-w-[500px]">
           <CardHeader>
-            <CardTitle>Mark as Paid?</CardTitle>
+          <CardTitle>Confirm Action</CardTitle>
             <CardDescription>
-              Are you sure you want to mark this invoice as paid?
+                Confirm marking this invoice as paid.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Image src={PaidGif} alt="Paid Gif" className="rounded-lg" />
+            <Image src={PaidGif} alt="Paid Gif" unoptimized={true}  className="rounded-lg" />
           </CardContent>
           <CardFooter className="flex items-center justify-between">
             <Link
@@ -60,7 +60,7 @@ import { SubmitButton } from "@/components/shared/SubmitButtons";
                 await MarkAsPaidAction(invoiceId);
               }}
             >
-              <SubmitButton text="Mark as Paid!" />
+              <SubmitButton text="Mark as Paid" />
             </form>
           </CardFooter>
         </Card>

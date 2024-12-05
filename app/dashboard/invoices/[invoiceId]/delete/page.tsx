@@ -44,11 +44,11 @@ export default async function DeleteInvoiceRoute({
         <CardHeader>
           <CardTitle>Delete Invoice</CardTitle>
           <CardDescription>
-            Are you sure that you want to delete this invoice?
+          Deleting this invoice is irreversible. Are you sure you want to proceed?
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Image src={WarningGif} alt="Warning Gif" className="rounded-lg" />
+          <Image src={WarningGif} alt="Warning Gif" unoptimized={true} className="rounded-lg" />
         </CardContent>
         <CardFooter className="flex items-center justify-between">
           <Link
